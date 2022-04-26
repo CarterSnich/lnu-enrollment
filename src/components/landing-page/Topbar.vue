@@ -10,7 +10,7 @@ export default {
 </script>
 
 <template>
-	<nav class="fixed-top navbar navbar-expand navbar-dark p-0 d-md-block d-none px-5">
+	<nav class="navbar navbar-expand navbar-dark p-0 d-md-block d-none px-5">
 		<div class="container-fluid">
 			<a class="navbar-brand" href="#">
 				<img src="./../../assets/logolnu.png" alt="lnulogo" width="64" />
@@ -36,7 +36,7 @@ export default {
 		</div>
 	</nav>
 
-	<nav class="fixed-top navbar navbar-dark p-0 d-md-none">
+	<nav class="navbar navbar-dark p-0 d-md-none">
 		<div class="container-fluid">
 			<a class="navbar-brand" href="#">
 				<img src="./../../assets/logolnu.png" alt="lnulogo" width="64" />
@@ -48,16 +48,16 @@ export default {
 			<div class="collapse navbar-collapse" id="navbarSupportedContent">
 				<ul class="navbar-nav me-auto mb-2 mb-lg-0">
 					<li class="nav-item">
-						<a class="nav-link" aria-current="page" href="#">Home</a>
+						<router-link to="/" class="nav-link" :class="{ active: activePage == 'home' }" href="#">Home</router-link>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="#">Contact us</a>
+						<router-link to="/contact-us" class="nav-link" :class="{ active: activePage == 'contact-us' }" href="#">Contact us</router-link>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="#">Help</a>
+						<router-link to="/help" class="nav-link" :class="{ active: activePage == 'help' }" href="#">Help</router-link>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link">Login</a>
+						<router-link to="/login" class="nav-link" :class="{ active: activePage == 'login' }"> Login </router-link>
 					</li>
 				</ul>
 			</div>

@@ -1,18 +1,40 @@
-import { createApp } from 'vue'
+import { createApp } from 'vue';
 import { createRouter, createWebHashHistory } from 'vue-router';
-import App from './App.vue'
-import Home from './components/landing-page/Home.vue'
-import ContactUs from './components/landing-page/ContactUs.vue'
+import App from './App.vue';
+import Home from './Home.vue';
+import ContactUs from './ContactUs.vue';
+import Help from './Help.vue';
+import Login from './Login.vue';
 
 
-const routes = [
-    { path: "/", component: Home},
-    { path: "/contact-us", component: ContactUs },
-    { path: "/help", component: ContactUs },
-    { path: "/login", component: ContactUs },
+const routes = [{
+        path: "/",
+        component: Home
+    },
+    {
+        path: "/contact-us",
+        component: ContactUs,
+        props: {
+            activePage: 'contact-us'
+        }
+    },
+    {
+        path: "/help",
+        component: Help,
+        props: {
+            activePage: 'help'
+        }
+    },
+    {
+        path: "/login",
+        component: Login,
+        props: {
+            activePage: 'login'
+        }
+    },
 ];
 
-createRouter
+
 const router = createRouter({
     history: createWebHashHistory(),
     routes,
