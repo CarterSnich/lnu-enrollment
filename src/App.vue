@@ -1,3 +1,5 @@
+<title>Student Registration</title>
+
 <script setup>
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.min.js";
@@ -8,6 +10,7 @@ import Bottombar from "./components/landing-page/Bottombar.vue";
 <style>
 @import "./assets/base.css";
 </style>
+
 
 <template>
 	<div id="app" class="d-flex vh-100">
