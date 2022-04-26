@@ -6,7 +6,7 @@ import ContactUs from './components/landing-page/ContactUs.vue'
 
 
 const routes = [
-    { path: "/", component: Home },
+    { path: "/", component: Home},
     { path: "/contact-us", component: ContactUs },
     { path: "/help", component: ContactUs },
     { path: "/login", component: ContactUs },
