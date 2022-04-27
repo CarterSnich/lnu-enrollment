@@ -1,4 +1,5 @@
 <script setup>
+import "./../assets/index.css";
 import TopNav from "./TopNav.vue";
 import Footer from "./Footer.vue";
 </script>

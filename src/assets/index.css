@@ -1,0 +1,41 @@
+#app {
+	display: flex;
+	flex-flow: column;
+	height: 100vh;
+}
+
+#content {
+	margin-bottom: 3.25rem;
+}
+
+h2.bigtext {
+	color: #be9a09;
+	font-size: clamp(2.5rem, 5vw, 4.25rem);
+	text-align: center;
+	margin-inline: 1.25rem;
+	margin-bottom: 3.25rem;
+}
+div.academ > div {
+	text-align: center;
+}
+div.academ > div > img {
+	width: min(30.25rem, 100%);
+	height: auto;
+}
+
+.academ-btn {
+	color: white !important;
+	background-color: #be9a09 !important;
+}
+.academ-btn:hover {
+	color: inherit !important;
+	box-shadow: inset 0px 0px 0.25rem 0px #00000055;
+}
+
+.academ-btn:active {
+	box-shadow: 0 0 0 0.25rem #be9a0944 !important;
+}
+
+.academ-btn:focus {
+	box-shadow: 0 0 0 0.25rem #be9a0944 !important;
+}
