@@ -1,37 +1,17 @@
 import { createApp } from 'vue';
 import { createRouter, createWebHashHistory } from 'vue-router';
 import App from './App.vue';
-import Home from './Home.vue';
-import ContactUs from './ContactUs.vue';
-import Help from './Help.vue';
-import Login from './Login.vue';
+import Landing from './components/Landing.vue';
+import ContactUs from './components/ContactUs.vue';
+import Help from './components/Help.vue';
+import Login from './components/Login.vue';
 
 
-const routes = [{
-        path: "/",
-        component: Home
-    },
-    {
-        path: "/contact-us",
-        component: ContactUs,
-        props: {
-            activePage: 'contact-us'
-        }
-    },
-    {
-        path: "/help",
-        component: Help,
-        props: {
-            activePage: 'help'
-        }
-    },
-    {
-        path: "/login",
-        component: Login,
-        props: {
-            activePage: 'login'
-        }
-    },
+const routes = [
+    {path: '/', component: Landing},
+    {path: '/contact-us', component: ContactUs},
+    {path: '/help', component: Help},
+    {path: '/login', component: Login}
 ];
 
 

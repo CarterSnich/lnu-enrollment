@@ -8,7 +8,5 @@ import "bootstrap/dist/js/bootstrap.min.js";
 </style>
 
 <template>
-	<div>
-		<router-view></router-view>
-	</div>
+	<router-view></router-view>
 </template>
