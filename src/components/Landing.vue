@@ -15,8 +15,8 @@ import Footer from "./Footer.vue";
 					<router-link to="/" class="academ-btn btn btn-lg" type="button">User Evaluation</router-link>
 				</div>
 			</div>
-			<div class="academ d-flex justify-content-center">
-				<img src="./../assets/academ.png" alt="academ.png" />
+			<div class="academ">
+				<img src="./../assets/academ.png" alt="academ.png" class="text-center" />
 			</div>
 		</div>
 	</div>
@@ -49,6 +49,9 @@ h2.bigtext {
 div.academ > img {
 	width: min(30.25rem, 100%);
 	height: auto;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 a.academ-btn {
